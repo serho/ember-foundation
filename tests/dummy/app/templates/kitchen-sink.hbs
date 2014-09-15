@@ -1,0 +1,144 @@
+<h1 id="kitchen-sink">Kitchen sink</h1>
+
+<h3 class="subheader">
+  This page includes every single Foundation element so that we can make sure
+  things work together smoothly.
+</h3>
+
+<h4 id="joyride">Joyride</h4>
+<div>
+  {{#f-button action="greet" class="secondary" id="start-jr"}}Start Joyride{{/f-button}}
+
+  <h5 class="so-awesome" id="numero1">Build Joyride with HTML</h5>
+  <p class="so-awesome" id="numero2">Stop Number 2 for You!</p>
+
+  <ol class="joyride-list" data-joyride="">
+    <li data-class="custom so-awesome" data-id="numero1" data-text="Next">
+      <h4>Stop #1</h4>
+
+      <p>
+        You can control all the details for your tour stop. Any valid HTML
+        will work inside of Joyride.
+      </p>
+    </li>
+
+    <li data-button="Next" data-id="numero2">
+      <h4>Stop #2</h4>
+
+      <p>
+        Get the details right by styling Joyride with a custom stylesheet!
+      </p>
+    </li>
+
+    <li data-button="Next">
+      <h4>Stop #3</h4>
+
+      <p>It works as a modal too!</p>
+    </li>
+  </ol>
+</div>
+
+<hr>
+
+<h4 id="alert-boxes">Alert Boxes</h4>
+{{#f-alert class="radius"}}
+  This is a standard alert (div.alert-box.radius).
+{{/f-alert}}
+{{#f-alert class="success"}}
+  This is a success alert (div.alert-box.success).
+{{/f-alert}}
+{{#f-alert class="alert round"}}
+  This is an alert (div.alert-box.alert.round).
+{{/f-alert}}
+{{#f-alert class="secondary"}}
+  This is a secondary alert (div.alert-box.secondary).
+{{/f-alert}}
+
+<hr>
+
+<h4 id="block-grid">Block Grid</h4>
+<ul class="small-block-grid-2 large-block-grid-4">
+  <li><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/comet-th.jpg"></li>
+  <li><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/launch-th.jpg"></li>
+  <li><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/space-th.jpg"></li>
+  <li><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/spacewalk-th.jpg"></li>
+</ul>
+
+<hr>
+
+<h4 id="breadcrumbs">Breadcrumbs</h4>
+{{f-breadcrumbs}}
+
+<hr>
+
+<h4 id="buttons">Buttons</h4>
+<div class="row">
+  <div class="small-6 large-6 columns">
+    {{#f-button class="tiny"}}.tiny.button{{/f-button}}
+    <br>
+    {{#f-button class="small"}}.small.button{{/f-button}}
+    <br>
+    {{#f-button}}.button{{/f-button}}
+    <br>
+    {{#f-button class="expand"}}.expand.button{{/f-button}}
+  </div>
+
+  <div class="small-6 large-6 columns">
+    {{#f-button class="tiny secondary"}}.tiny.secondary.button{{/f-button}}
+    <br>
+    {{#f-button class="small success radius"}}.small.success.radius.button{{/f-button}}
+    <br>
+    {{#f-button class="alert disabled round"}}.alert.disabled.rounded.button{{/f-button}}
+  </div>
+</div>
+
+<hr>
+
+<h4 id="button-groups">Button Groups</h4>
+<ul class="button-group">
+  <li>{{#f-button class="small"}}Button 1{{/f-button}}</li>
+  <li>{{#f-button class="small"}}Button 2{{/f-button}}</li>
+  <li>{{#f-button class="small"}}Button 3{{/f-button}}</li>
+</ul>
+<ul class="button-group radius">
+  <li>{{#f-button class="secondary"}}Button 1{{/f-button}}</li>
+  <li>{{#f-button class="secondary"}}Button 2{{/f-button}}</li>
+  <li>{{#f-button class="secondary"}}Button 3{{/f-button}}</li>
+  <li>{{#f-button class="secondary"}}Button 4{{/f-button}}</li>
+</ul>
+<ul class="button-group round even-3">
+  <li>{{#f-button class="alert"}}Button 1{{/f-button}}</li>
+  <li>{{#f-button class="alert"}}Button 2{{/f-button}}</li>
+  <li>{{#f-button class="alert"}}Button 3{{/f-button}}</li>
+</ul>
+<ul class="button-group round even-3">
+  <li>{{input class="button success" type="submit" value="Button 1"}}</li>
+  <li>{{input class="button success" type="submit" value="Button 2"}}</li>
+  <li>{{input class="button success" type="submit" value="Button 3"}}</li>
+</ul>
+
+<hr>
+
+<h4 id="dropdown-buttons">Dropdown Buttons</h4>
+<ul id="drop" class="f-dropdown content" data-dropdown-content>
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another link</a></li>
+</ul>
+<p>
+  {{#f-button class="tiny dropdown" data-dropdown="drop"}}Tiny Dropdown Button{{/f-button}}
+  <br>
+  {{#f-button class="small secondary radius dropdown" data-dropdown="drop"}}Small Secondary Radius Dropdown Button{{/f-button}}
+  <br>
+</p>
+
+<button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</button>
+<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+  <li><a href="#">This is a link</a></li>
+  <li><a href="#">This is another</a></li>
+  <li><a href="#">Yet another</a></li>
+</ul>
+<button data-dropdown="drop2" aria-controls="drop2" aria-expanded="false">Has Content Dropdown</a>
+<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+  <p>Some text that people will think is awesome! Some text that people will think is awesome! Some text that people will think is awesome!</p>
+</div>
