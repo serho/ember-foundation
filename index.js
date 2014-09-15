@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'ember-foundation-components',
+  name: 'ember-foundation',
 
   initialize: function (app) {
     app.import('bower_components/foundation/css/normalize.css');
