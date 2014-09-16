@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import FComponent from './f-component';
 
-export default Ember.Component.extend({
+export default FComponent.extend({
   'aria-hidden': 'true',
 
   attributeBindings: [ 'aria-hidden', 'data-dropdown-content', 'tabindex' ],

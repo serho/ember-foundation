@@ -6,6 +6,8 @@ export default Ember.Mixin.create({
   setupDropdown: function () {
     var alignment = this.get('align-dropdown');
     var dropdownId = this.get('dropdown');
+    var hover = this.get('hover');
+    var options = [];
 
     if (!dropdownId) {
       return;
@@ -19,10 +21,13 @@ export default Ember.Mixin.create({
     }
 
     if (alignment) {
-      this.set('data-options', 'align:' + alignment);
+      options.push('align:' + alignment);
     }
 
+    if (hover) {
+      options.push('is_hover:true');
+    }
 
-    this.$().foundation('dropdown', 'init');
+    this.set('data-options', options.join(';'));
   }.on('didInsertElement')
 });

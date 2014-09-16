@@ -1,7 +1,7 @@
-import Ember from 'ember';
 import DropdownEnabled from '../mixins/dropdown-enabled';
+import FComponent from './f-component';
 
-export default Ember.Component.extend(DropdownEnabled, {
+export default FComponent.extend(DropdownEnabled, {
   attributeBindings: [ 'aria-label', 'role', 'tabindex' ],
 
   classNames: [ 'button' ],

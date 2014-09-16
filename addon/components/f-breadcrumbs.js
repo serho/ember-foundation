@@ -1,6 +1,7 @@
 import Ember from 'ember';
+import FComponent from './f-component';
 
-export default Ember.Component.extend({
+export default FComponent.extend({
   applicationController: null,
 
   breadCrumbs: function () {
