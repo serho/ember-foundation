@@ -1,5 +1,3 @@
-/* globals $ */
-
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
@@ -14,13 +12,17 @@ export default Ember.Mixin.create({
     }
 
     this.set('aria-controls', dropdownId);
-    this.set('data-dropdown', dropdownId);
+
+    // A split button will not include this property directly
+    if (!this.get('isSplit')) {
+      this.set('data-dropdown', dropdownId);
+    }
 
     if (alignment) {
       this.set('data-options', 'align:' + alignment);
     }
 
-    // FIXME This is awful:
-    $(document).foundation();
+
+    this.$().foundation('dropdown', 'init');
   }.on('didInsertElement')
 });

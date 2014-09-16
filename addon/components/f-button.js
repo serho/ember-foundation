@@ -1,7 +1,7 @@
 import Ember from 'ember';
-import EnableDropdown from '../mixins/enable-dropdown';
+import DropdownEnabled from '../mixins/dropdown-enabled';
 
-export default Ember.Component.extend(EnableDropdown, {
+export default Ember.Component.extend(DropdownEnabled, {
   attributeBindings: [ 'aria-label', 'role', 'tabindex' ],
 
   classNames: [ 'button' ],
@@ -9,6 +9,10 @@ export default Ember.Component.extend(EnableDropdown, {
   click: function () {
     this.sendAction();
   },
+
+  isSplit: function () {
+    return this.get('dropdown') && this.classNames.indexOf('split') > -1;
+  }.property('class'),
 
   role: 'button',
 

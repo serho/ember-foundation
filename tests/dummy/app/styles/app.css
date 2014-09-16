@@ -1,1 +1,5 @@
 @import "docs.css";
+
+* {
+  outline: none;
+}

@@ -120,35 +120,26 @@
 <hr>
 
 <h4 id="dropdown-buttons">Dropdown Buttons</h4>
-{{#f-button align-dropdown="right" dropdown="test-dropdown"}}Open Dropdown{{/f-button}}
-{{#f-dropdown id="test-dropdown"}}
-  <p>Hello!</p>
-{{/f-dropdown}}
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<!--
-
-<ul id="drop" class="f-dropdown content" data-dropdown-content>
+{{#f-dropdown class="content" id="drop" tagName="ul"}}
   <li><a href="#">This is a link</a></li>
   <li><a href="#">This is another</a></li>
   <li><a href="#">Yet another link</a></li>
-</ul>
+{{/f-dropdown}}
 <p>
-  {{#f-button class="tiny dropdown" data-dropdown="drop"}}Tiny Dropdown Button{{/f-button}}
+  {{#f-button class="tiny dropdown" dropdown="drop"}}Tiny Dropdown Button{{/f-button}}
   <br>
-  {{#f-button class="small secondary radius dropdown" data-dropdown="drop"}}Small Secondary Radius Dropdown Button{{/f-button}}
+  {{#f-button class="small secondary radius dropdown" dropdown="drop"}}Small Secondary Radius Dropdown Button{{/f-button}}
   <br>
+  {{#f-button class="alert round dropdown" dropdown="drop"}}Alert Round Dropdown Button{{/f-button}}
+  <br>
+  {{#f-button class="large success dropdown" dropdown="drop"}}Large Success Dropdown Button{{/f-button}}
+  <br>
+  {{#f-button class="large dropdown expand" dropdown="drop"}}Large Dropdown Expand Button{{/f-button}}
 </p>
 
-<button data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</button>
-<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
-  <li><a href="#">This is a link</a></li>
-  <li><a href="#">This is another</a></li>
-  <li><a href="#">Yet another</a></li>
-</ul>
-<button data-dropdown="drop2" aria-controls="drop2" aria-expanded="false">Has Content Dropdown</a>
-<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
-  <p>Some text that people will think is awesome! Some text that people will think is awesome! Some text that people will think is awesome!</p>
-</div>
--->
+<hr>
+
+<h4 id="split-buttons">Split Buttons</h4>
+<p>
+  {{#f-button class="tiny split" dropdown="drop"}}Tiny Split Button{{/f-button}}
+</p>
