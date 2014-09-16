@@ -21,6 +21,9 @@ app.import('bower_components/foundation/js/vendor/fastclick.js');
 app.import('bower_components/foundation/js/vendor/jquery.cookie.js');
 app.import('bower_components/foundation/js/vendor/modernizr.js');
 app.import('bower_components/foundation/js/vendor/placeholder.js');
-app.import('bower_components/foundation/js/foundation.min.js');
+app.import({
+  development: 'bower_components/foundation/js/foundation.js',
+  production: 'bower_components/foundation/js/foundation.min.js'
+});
 
 module.exports = app.toTree();
