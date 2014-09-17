@@ -30,6 +30,29 @@ import FoundationEnabled from 'ember-foundation/mixins/foundation-enabled';
 export default Ember.View.extend(FoundationEnabled);
 ```
 
+## Stylesheets
+
+### Using SASS
+
+In your app.scss, simply import "ember-foundation":
+
+```scss
+// app/styles/app.scss
+
+@import "ember-foundation";
+```
+
+### Using CSS
+
+In your app.css, import the needed CSS directly from Foundation:
+
+```css
+/* app/styles/app.css */
+
+@import "bower_components/foundation/css/normalize.css";
+@import "bower_components/foundation/css/foundation.css";
+```
+
 ## Using Foundation Components
 
 *Coming soon*
