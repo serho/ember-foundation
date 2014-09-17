@@ -5,6 +5,8 @@ export default FComponent.extend({
 
   attributeBindings: [ 'aria-hidden', 'data-dropdown-content' ],
 
+  classNameBindings: [ 'content' ],
+
   classNames: [ 'f-dropdown' ],
 
   'data-dropdown-content': function () {
