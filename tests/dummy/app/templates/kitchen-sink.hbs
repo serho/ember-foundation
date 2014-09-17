@@ -153,30 +153,10 @@
 <hr>
 
 <h4 id="switches">Switches</h4>
-<div class="small-2 switch tiny">
-  <input id="a" name="switch-a" type="radio" checked>
-  <label for="a">Off</label>
-
-  <input id="a1" name="switch-a" type="radio">
-  <label for="a1">On</label>
-</div>
-
-{{f-switch label="Hello"}}
-
-<div class="switch">
-  {{input id="first" type="radio" name="test-value" value="first" selected=true}}
-  <label for="first"></label>
-
-  {{input id="second" type="radio" name="test-value" value="second"}}
-  <label for="second"></label>
-</div>
-
-
-
-
-
-
-
+{{f-switches class="small-2 tiny" name="switch-a" options=switchAOptions value=switchAValue}}
+{{f-switches class="small-3 small" name="switch-b" options=switchBOptions value=switchBValue}}
+{{f-switches class="small-4 radius" name="switch-c" options=switchCOptions value=switchCValue}}
+{{f-switches class="small-6 large round" name="switch-d" options=switchDOptions value=switchDValue}}
 
 
 <footer></footer>

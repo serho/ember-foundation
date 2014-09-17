@@ -5,7 +5,11 @@ export default FComponent.extend({
 
   inputId: function () {
     return this.get('elementId') + '-input';
-  }.property('elementId'),
+  }.property(),
+
+  tagName: 'fieldset',
+
+  tabindex: 0,
 
   type: 'checkbox'
 });

@@ -2,7 +2,7 @@ import DropdownEnabled from '../mixins/dropdown-enabled';
 import FComponent from './f-component';
 
 export default FComponent.extend(DropdownEnabled, {
-  attributeBindings: [ 'aria-label', 'role', 'tabindex' ],
+  attributeBindings: [ 'aria-label', 'role' ],
 
   classNames: [ 'button' ],
 
