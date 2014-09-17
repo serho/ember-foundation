@@ -1,7 +1,3 @@
 <dl class="sub-nav">
-  {{#each arrival in arrivals}}
-    <dd {{bind-attr data-magellan-arrival=arrival.name}}>
-      <a {{bind-attr href=arrival.href}}>{{arrival.text}}</a>
-    </dd>
-  {{/each}}
+  {{yield}}
 </dl>
