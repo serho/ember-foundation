@@ -279,7 +279,10 @@
 <hr>
 
 <h4 id="magellan">Magellan</h4>
-{{f-magellan arrivals=magellanArrivals class="magellan-container"}}
+{{#f-magellan class="magellan-container"}}
+  {{#f-arrival href="#build" name="build"}}Build with HTML{{/f-arrival}}
+  {{#f-arrival href="#js" name="js"}}Using JavaScript{{/f-arrival}}
+{{/f-magellan}}
 
 <p><a name="build"></a></p>
 <h5 data-magellan-destination="build">Build With Predefined HTML Structure</h5>
@@ -298,5 +301,18 @@
   porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta
   felis euismod semper.
 </p>
+
+<hr>
+
+<h4 id="orbit">Orbit</h4>
+<p>
+  Orbit won't work in Ember currently, due to Handlebars' metamorph scripts.<br>
+  Note that Orbit has also <a href="http://foundation.zurb.com/forum/posts/14504-moving-on-from-developing-orbit">been deprecated</a>.
+</p>
+
+<hr>
+
+<h4 id="pagination">Pagination</h4>
+{{f-pagination currentPage=1 totalPages=10}}
 
 <footer></footer>
