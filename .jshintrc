@@ -1,0 +1,31 @@
+{
+  "predef": {
+    "document": true,
+    "window": true
+  },
+  "boss": true,
+  "browser": false,
+  "curly": false,
+  "debug": false,
+  "devel": false,
+  "eqeqeq": true,
+  "eqnull": true,
+  "esnext": true,
+  "evil": true,
+  "forin": false,
+  "immed": false,
+  "laxbreak": false,
+  "newcap": true,
+  "noarg": true,
+  "node": false,
+  "noempty": false,
+  "nomen": false,
+  "nonew": false,
+  "onevar": false,
+  "plusplus": false,
+  "regexp": false,
+  "strict": false,
+  "sub": true,
+  "undef": true,
+  "white": false
+}
