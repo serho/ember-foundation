@@ -36,6 +36,16 @@ export default Ember.Controller.extend({
     }
   ],
 
+  magellanArrivals: [
+    {
+      name: 'build',
+      text: 'Build with HTML'
+    }, {
+      name: 'js',
+      text: 'Using JavaScript'
+    }
+  ],
+
   switchAOptions: [
     {
       id: 'a',
