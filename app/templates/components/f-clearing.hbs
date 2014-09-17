@@ -1,0 +1,7 @@
+{{#each image in images}}
+  <li {{bind-attr class="image.featured:clearing-featured-img"}}>
+    <a class="th" {{bind-attr href=image.url}}>
+      <img {{bind-attr alt=image.caption data-caption=image.caption src=image.thumbnail}}>
+    </a>
+  </li>
+{{/each}}

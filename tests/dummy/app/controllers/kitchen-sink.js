@@ -9,6 +9,29 @@ export default Ember.Controller.extend({
 
   breadCrumb: 'Kitchen Sink',
 
+  clearingImages: [
+    {
+      caption: 'Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum.',
+      featured: true,
+      thumbnail: 'http://foundation.zurb.com/docs/assets/img/examples/comet-th-sm.jpg',
+      url: 'http://foundation.zurb.com/docs/assets/img/examples/comet.jpg'
+    }, {
+      thumbnail: 'http://foundation.zurb.com/docs/assets/img/examples/earth-th-sm.jpg',
+      url: 'http://foundation.zurb.com/docs/assets/img/examples/earth.jpg'
+    }, {
+      caption: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
+      thumbnail: 'http://foundation.zurb.com/docs/assets/img/examples/launch-th-sm.jpg',
+      url: 'http://foundation.zurb.com/docs/assets/img/examples/launch.jpg'
+    }, {
+      thumbnail: 'http://foundation.zurb.com/docs/assets/img/examples/satelite-th-sm.jpg',
+      url: 'http://foundation.zurb.com/docs/assets/img/examples/satelite.jpg'
+    }, {
+      caption: 'Integer posuere erat a ante venenatis dapibus posuere velit aliquet.',
+      thumbnail: 'http://foundation.zurb.com/docs/assets/img/examples/space-th-sm.jpg',
+      url: 'http://foundation.zurb.com/docs/assets/img/examples/space.jpg'
+    }
+  ],
+
   switchAOptions: [
     {
       id: 'a',
