@@ -3,7 +3,9 @@ import FComponent from './f-component';
 export default FComponent.extend({
   'aria-hidden': 'true',
 
-  attributeBindings: [ 'aria-hidden', 'data-dropdown-content', 'tabindex' ],
+  attributeBindings: [ 'aria-hidden', 'data-dropdown-content' ],
+
+  classNameBindings: [ 'content' ],
 
   classNames: [ 'f-dropdown' ],
 

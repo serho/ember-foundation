@@ -1,3 +1,5 @@
+/* globals $ */
+
 export default {
   name: 'ember-foundation',
 

@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  attributeBindings: [ 'data-option' ]
+  attributeBindings: [ 'data-options', 'tabindex' ],
+
+  'data-options': Ember.computed.alias('options')
 });

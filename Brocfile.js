@@ -17,6 +17,9 @@ var app = new EmberAddon();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/foundation/scss/normalize.scss');
+app.import('bower_components/foundation/scss/foundation.scss');
+
 app.import('bower_components/foundation/js/vendor/fastclick.js');
 app.import('bower_components/foundation/js/vendor/jquery.cookie.js');
 app.import('bower_components/foundation/js/vendor/modernizr.js');
