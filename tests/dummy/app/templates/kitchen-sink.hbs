@@ -315,4 +315,48 @@
 <h4 id="pagination">Pagination</h4>
 {{f-pagination changePage="changePage" currentPage=1 totalPages=10}}
 
+<hr>
+
+<h4 id="panels">Panels</h4>
+<div class="row">
+  <div class="large-6 columns">
+    <div class="panel">
+      <h5>This is a regular panel.</h5>
+      <p>It has an easy to override visual style, and is appropriately subdued.</p>
+    </div>
+  </div>
+
+  <div class="large-6 columns">
+    <div class="radius callout panel">
+      <h5>This is a radius callout panel.</h5>
+      <p>It's a little ostentatious, but useful for important content.</p>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<h4 id="pricing-tables">Pricing Tables</h4>
+<div class="row">
+  <div class="large-4 columns">
+    <ul class="pricing-table">
+      <li class="title">Standard</li>
+      <li class="price">$99.99</li>
+      <li class="description">An awesome description</li>
+      <li class="bullet-item">1 Database</li>
+      <li class="bullet-item">5GB Storage</li>
+      <li class="bullet-item">20 Users</li>
+      <li class="cta-button">{{#f-button}}Buy Now{{/f-button}}</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h4 id="progress-bars">Progress Bars</h4>
+{{f-progress-bar class="large-6" value=40}}
+{{f-progress-bar class="large-8 radius success" value=80}}
+{{f-progress-bar class="large-10 nice round alert" value=30}}
+{{f-progress-bar class="nice secondary" value=50}}
+
 <footer></footer>
