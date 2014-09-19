@@ -2,6 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
+    changePage: function (page) {
+      console.log('Changing pagination page to', page);
+    },
+
     greet: function () {
       console.log('Hello!');
     }

@@ -7,7 +7,8 @@ export default FComponent.extend({
         return;
       }
 
-      console.log('Changing page to', page);
+      this.set('currentPage', page);
+      this.sendAction('changePage', page);
     },
 
     nextPage: function () {
@@ -15,7 +16,8 @@ export default FComponent.extend({
         return;
       }
 
-      console.log('Next page!');
+      this.set('currentPage', this.get('currentPage') + 1);
+      this.sendAction('changePage', this.get('currentPage'));
     },
 
     previousPage: function () {
@@ -23,7 +25,8 @@ export default FComponent.extend({
         return;
       }
 
-      console.log('Previous page!');
+      this.set('currentPage', this.get('currentPage') - 1);
+      this.sendAction('changePage', this.get('currentPage'));
     }
   },
 
@@ -39,6 +42,21 @@ export default FComponent.extend({
 
   onLastPage: function () {
     return this.get('currentPage') === this.get('totalPages');
+  }.property('currentPage', 'totalPages'),
+
+  pages: function () {
+    var currentPage = this.get('currentPage');
+    var pages = [];
+    var totalPages = this.get('totalPages');
+
+    for (var i = 1; i <= totalPages; i++) {
+      pages.push({
+        current: (i === currentPage),
+        number: i
+      });
+    }
+
+    return pages;
   }.property('currentPage', 'totalPages'),
 
   role: 'menubar',
