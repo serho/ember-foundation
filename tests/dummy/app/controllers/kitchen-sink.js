@@ -8,6 +8,10 @@ export default Ember.Controller.extend({
 
     greet: function () {
       console.log('Hello!');
+    },
+
+    logValue: function (value) {
+      console.log(value);
     }
   },
 
