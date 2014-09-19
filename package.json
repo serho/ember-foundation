@@ -1,6 +1,6 @@
 {
   "name": "ember-foundation",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Ember Addon for Zurb Foundation 5 library and Ember components",
   "keywords": [
     "components",
