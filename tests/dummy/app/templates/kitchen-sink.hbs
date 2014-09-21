@@ -409,4 +409,46 @@
 {{f-slider class="round"}}
 {{f-slider options="step: 20" value=80}}
 
+<hr>
+
+<h4 id="accordion">Accordion</h4>
+{{#f-accordion}}
+  {{#f-accordion-panel id="panel1" title="Accordion 1"}}
+    <dl class="tabs" data-tab>
+      <dd class="active"><a href="#panel1-1">Tab 1</a></dd>
+      <dd><a href="#panel1-2">Tab 2</a></dd>
+      <dd><a href="#panel1-3">Tab 3</a></dd>
+      <dd><a href="#panel1-4">Tab 4</a></dd>
+    </dl>
+    <div class="tabs-content">
+      <div class="content active" id="panel1-1">
+        <p>First panel content goes here...</p>
+      </div>
+      <div class="content" id="panel1-2">
+        <p>Second panel content goes here...</p>
+      </div>
+      <div class="content" id="panel1-3">
+        <p>Third panel content goes here...</p>
+      </div>
+      <div class="content" id="panel1-4">
+        <p>Fourth panel content goes here...</p>
+      </div>
+    </div>
+  {{/f-accordion-panel}}
+
+  {{#f-accordion-panel id="panel2" title="Accordion 2"}}
+    Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  {{/f-accordion-panel}}
+
+  {{#f-accordion-panel id="panel3" title="Accordion 3"}}
+    Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  {{/f-accordion-panel}}
+{{/f-accordion}}
+
 <footer></footer>
