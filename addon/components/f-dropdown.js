@@ -19,5 +19,11 @@ export default FComponent.extend({
 
   tabindex: -1,
 
-  tagName: 'div'
+  tagName: function () {
+    if (this.get('content')) {
+      return 'div';
+    }
+
+    return 'ul';
+  }.property('content')
 });
