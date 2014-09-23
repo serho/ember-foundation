@@ -9,17 +9,5 @@ export default FComponent.extend({
 
   'data-clearing': '',
 
-  hasFeatured: function() {
-    var images = this.get('images');
-
-    for (var i = 0; i < images.length; i++) {
-      if (images[i].hasOwnProperty('featured') && images[i].featured) {
-        return true;
-      }
-    }
-
-    return false;
-  }.property('images.@each'),
-
   tagName: 'ul'
 });
