@@ -7,35 +7,27 @@
 
 <h4 id="joyride">Joyride</h4>
 <div>
-  {{#f-button action="greet" class="secondary" id="start-jr"}}Start Joyride{{/f-button}}
+  {{#f-button class="secondary"}}Start Joyride{{/f-button}}
 
   <h5 class="so-awesome" id="numero1">Build Joyride with HTML</h5>
   <p class="so-awesome" id="numero2">Stop Number 2 for You!</p>
 
-  <ol class="joyride-list" data-joyride="">
-    <li data-class="custom so-awesome" data-id="numero1" data-text="Next">
+  {{#f-joyride}}
+    {{#f-stop at="numero1" text="Next"}}
       <h4>Stop #1</h4>
+      <p>You can control all the details for your tour stop. Any valid HTML will work inside of Joyride.</p>
+    {{/f-stop}}
 
-      <p>
-        You can control all the details for your tour stop. Any valid HTML
-        will work inside of Joyride.
-      </p>
-    </li>
-
-    <li data-button="Next" data-id="numero2">
+    {{#f-stop at="numero2" button="Next" text="Next"}}
       <h4>Stop #2</h4>
+      <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+    {{/f-stop}}
 
-      <p>
-        Get the details right by styling Joyride with a custom stylesheet!
-      </p>
-    </li>
-
-    <li data-button="Next">
+    {{#f-stop button="End"}}
       <h4>Stop #3</h4>
-
       <p>It works as a modal too!</p>
-    </li>
-  </ol>
+    {{/f-stop}}
+  {{/f-joyride}}
 </div>
 
 <hr>
