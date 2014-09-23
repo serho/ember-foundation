@@ -1,7 +1,7 @@
 import FComponent from './f-component';
 
 export default FComponent.extend({
-  classNames: [ 'switch' ],
+  classNames: ['switch'],
 
   setup: function () {
     var self = this;

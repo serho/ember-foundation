@@ -4,11 +4,11 @@ import FComponent from './f-component';
 export default FComponent.extend({
   'aria-haspopup': 'true',
 
-  attributeBindings: [ 'aria-haspopup', 'data-tooltip', 'data-width', 'title' ],
+  attributeBindings: ['aria-haspopup', 'data-tooltip', 'data-width', 'title'],
 
-  classNameBindings: [ 'positionClass' ],
+  classNameBindings: ['positionClass'],
 
-  classNames: [ 'has-tip' ],
+  classNames: ['has-tip'],
 
   'data-tooltip': '',
 

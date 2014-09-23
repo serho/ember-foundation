@@ -31,7 +31,7 @@ export default FComponent.extend({
     'pathNames.[]'
   ),
 
-  classNames: [ 'breadcrumbs' ],
+  classNames: ['breadcrumbs'],
 
   controllers: function() {
     return this.get('handlerInfos').map(function(handlerInfo) {

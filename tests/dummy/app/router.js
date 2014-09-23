@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('breadcrumbs');
     this.route('buttons');
     this.route('clearing');
+    this.route('dropdowns');
   });
 
   this.route('kitchen-sink');

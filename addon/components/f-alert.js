@@ -1,9 +1,9 @@
 import FComponent from './f-component';
 
 export default FComponent.extend({
-  attributeBindings: [ 'data-alert' ],
+  attributeBindings: ['data-alert'],
 
-  classNames: [ 'alert-box' ],
+  classNames: ['alert-box'],
 
   'data-alert': ''
 });

@@ -2,7 +2,7 @@ import Ember from 'ember';
 import FComponent from './f-component';
 
 export default FComponent.extend({
-  attributeBindings: [ 'data-button', 'data-id', 'data-prev-text', 'data-text' ],
+  attributeBindings: ['data-button', 'data-id', 'data-prev-text', 'data-text'],
 
   'data-button': Ember.computed.alias('button'),
 

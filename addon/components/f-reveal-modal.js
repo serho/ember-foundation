@@ -1,9 +1,9 @@
 import FComponent from './f-component';
 
 export default FComponent.extend({
-  attributeBindings: [ 'data-reveal' ],
+  attributeBindings: ['data-reveal'],
 
-  classNames: [ 'reveal-modal' ],
+  classNames: ['reveal-modal'],
 
   'data-reveal': '',
 
