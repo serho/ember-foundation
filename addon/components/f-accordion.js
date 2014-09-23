@@ -7,5 +7,9 @@ export default FComponent.extend({
 
   'data-accordion': '',
 
+  setup: function() {
+    $(document).foundation('accordion', 'init');
+  }.on('didInsertElement'),
+
   tagName: 'dl'
 });
