@@ -9,7 +9,7 @@ export default FComponent.extend({
 
   'data-clearing': '',
 
-  hasFeatured: function () {
+  hasFeatured: function() {
     var images = this.get('images');
 
     for (var i = 0; i < images.length; i++) {

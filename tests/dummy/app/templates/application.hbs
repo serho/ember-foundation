@@ -10,6 +10,13 @@
   <section class="top-bar-section">
     <ul class="right">
       <li class="divider"></li>
+      <li class="has-dropdown">
+        {{#link-to "component-demos.index"}}Components{{/link-to}}
+        <ul class="dropdown">
+          <li>{{#link-to "component-demos.alert"}}Alert{{/link-to}}</li>
+        </ul>
+      </li>
+      <li class="divider"></li>
       <li>{{#link-to "kitchen-sink"}}Kitchen Sink{{/link-to}}</li>
     </ul>
   </section>

@@ -42,17 +42,21 @@ In your app.scss, simply import "ember-foundation":
 @import "ember-foundation";
 ```
 
+This will include
+
 ### Using CSS
 
-In your app.css, import the needed CSS directly from Foundation:
+To use plain CSS, you'll need to import the CSS files within your Brocfile.js:
 
-```css
-/* app/styles/app.css */
+```js
+// Brocfile.js
 
-@import "bower_components/foundation/css/normalize.css";
-@import "bower_components/foundation/css/foundation.css";
+app.import('bower_components/foundation/css/normalize.css');
+app.import('bower_components/foundation/css/foundation.css');
 ```
 
-## Using Foundation Components
+## Component Documentation Pages
 
-*Coming soon*
+The tests/dummy app included in this repository includes demos and examples for all of the Ember-based components. To view the app, simply run `ember serve` or `ember build` from the root folder of this addon.
+
+Note that you will need to have the development dependencies installed for the addon, so an `npm install` and `bower install` might be necessary as well.

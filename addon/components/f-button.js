@@ -7,13 +7,13 @@ export default FComponent.extend(DropdownEnabled, {
 
   classNames: [ 'button' ],
 
-  click: function () {
+  click: function() {
     this.sendAction();
   },
 
   'data-reveal-id': Ember.computed.alias('revealId'),
 
-  isSplit: function () {
+  isSplit: function() {
     return this.get('dropdown') && this.classNames.indexOf('split') > -1;
   }.property('class'),
 

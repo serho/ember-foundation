@@ -9,7 +9,7 @@ export default FComponent.extend({
 
   classNames: [ 'f-dropdown' ],
 
-  'data-dropdown-content': function () {
+  'data-dropdown-content': function() {
     if (this.classNames.indexOf('content') > -1) {
       return '';
     }
@@ -19,5 +19,11 @@ export default FComponent.extend({
 
   tabindex: -1,
 
-  tagName: 'div'
+  tagName: function() {
+    if (this.get('content')) {
+      return 'div';
+    }
+
+    return 'ul';
+  }.property('content')
 });

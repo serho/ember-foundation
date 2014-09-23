@@ -8,7 +8,7 @@ export default FComponent.extend({
 
     this.$('input[value="' + this.get('value') + '"]').prop('checked', true);
 
-    this.$('input').on('change', function () {
+    this.$('input').on('change', function() {
       self.set('value', self.$(this).val());
     });
   }.on('didInsertElement'),

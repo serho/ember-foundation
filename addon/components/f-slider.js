@@ -7,7 +7,7 @@ export default FComponent.extend({
 
   'data-slider': '',
 
-  setup: function () {
+  setup: function() {
     var self = this;
     var slider = this.$();
     var value = this.get('value');
@@ -16,7 +16,7 @@ export default FComponent.extend({
       slider.foundation('slider', 'set_value', value);
     }
 
-    slider.on('change.fndtn.slider', function () {
+    slider.on('change.fndtn.slider', function() {
       var sliderValue = slider.attr('data-slider');
 
       self.set('value', sliderValue);
@@ -26,7 +26,7 @@ export default FComponent.extend({
 
   tagName: 'div',
 
-  updateSliderValue: function () {
+  updateSliderValue: function() {
     var slider = this.$();
     var value = this.get('value');
 
