@@ -8,9 +8,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('component-demos', { path: '/components/' }, function () {
     this.route('accordion');
-    this.route('alert');
+    this.route('alerts');
     this.route('breadcrumbs');
-    this.route('button');
+    this.route('buttons');
     this.route('clearing');
   });
 
