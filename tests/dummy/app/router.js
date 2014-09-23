@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('accordion');
     this.route('alert');
     this.route('breadcrumbs');
+    this.route('button');
   });
 
   this.route('kitchen-sink');
