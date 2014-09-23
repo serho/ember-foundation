@@ -9,5 +9,9 @@ export default FComponent.extend({
 
   'data-clearing': '',
 
+  setup: function() {
+    $(document).foundation('clearing', 'init');
+  }.on('didInsertElement'),
+
   tagName: 'ul'
 });

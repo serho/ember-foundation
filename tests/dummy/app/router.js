@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('alert');
     this.route('breadcrumbs');
     this.route('button');
+    this.route('clearing');
   });
 
   this.route('kitchen-sink');
