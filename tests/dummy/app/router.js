@@ -13,6 +13,7 @@ Router.map(function() {
     this.route('buttons');
     this.route('clearing');
     this.route('dropdowns');
+    this.route('joyride');
   });
 
   this.route('kitchen-sink');

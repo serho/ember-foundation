@@ -10,7 +10,7 @@ export default FComponent.extend({
 
   'data-prev-text': Ember.computed.alias('prevText'),
 
-  'data-text': Ember.computed.alias('text'),
+  'data-text': Ember.computed.alias('nextText'),
 
   tagName: 'li'
 });

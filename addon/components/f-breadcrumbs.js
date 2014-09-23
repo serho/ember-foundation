@@ -1,4 +1,3 @@
-import Ember from 'ember';
 import FComponent from './f-component';
 
 export default FComponent.extend({
