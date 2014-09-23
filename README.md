@@ -19,17 +19,6 @@ Next, run the blueprint for ember-foundation:
 ember generate ember-foundation
 ```
 
-Unfortunately, and hopefully temporarily, you'll need to mixin FoundationEnabled with every view that contains Foundation components, in order for Foundation's JavaScript to correctly initialize everything.
-
-```js
-// app/views/application.js
-
-import Ember from 'ember';
-import FoundationEnabled from 'ember-foundation/mixins/foundation-enabled';
-
-export default Ember.View.extend(FoundationEnabled);
-```
-
 ## Stylesheets
 
 ### Using SASS
