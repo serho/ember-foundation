@@ -7,7 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('component-demos', { path: '/components/' }, function () {
-    this.route('alert', { path: '/f-alert' });
+    this.route('alert');
   });
 
   this.route('kitchen-sink');
