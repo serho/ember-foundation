@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource('component-demos', { path: '/components/' }, function () {
     this.route('accordion');
     this.route('alert');
+    this.route('breadcrumbs');
   });
 
   this.route('kitchen-sink');

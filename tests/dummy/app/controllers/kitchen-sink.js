@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
     }
   },
 
-  breadCrumb: 'Kitchen Sink',
+  breadCrumbName: 'Kitchen Sink',
 
   switchAOptions: [
     {
