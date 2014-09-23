@@ -1,11 +1,11 @@
 import FComponent from './f-component';
 
 export default FComponent.extend({
-  href: function () {
+  href: function() {
     return '#' + this.get('panelId');
   }.property('panelId'),
 
-  panelId: function () {
+  panelId: function() {
     return this.get('elementId') + '-panel';
   }.property('elementId'),
 

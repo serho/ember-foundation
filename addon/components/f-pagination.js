@@ -2,7 +2,7 @@ import FComponent from './f-component';
 
 export default FComponent.extend({
   actions: {
-    changePage: function (page) {
+    changePage: function(page) {
       if (page === this.get('currentPage')) {
         return;
       }
@@ -11,7 +11,7 @@ export default FComponent.extend({
       this.sendAction('changePage', page);
     },
 
-    nextPage: function () {
+    nextPage: function() {
       if (this.get('onLastPage')) {
         return;
       }
@@ -20,7 +20,7 @@ export default FComponent.extend({
       this.sendAction('changePage', this.get('currentPage'));
     },
 
-    previousPage: function () {
+    previousPage: function() {
       if (this.get('onFirstPage')) {
         return;
       }
@@ -36,15 +36,15 @@ export default FComponent.extend({
 
   classNames: [ 'pagination' ],
 
-  onFirstPage: function () {
+  onFirstPage: function() {
     return this.get('currentPage') === 1;
   }.property('currentPage'),
 
-  onLastPage: function () {
+  onLastPage: function() {
     return this.get('currentPage') === this.get('totalPages');
   }.property('currentPage', 'totalPages'),
 
-  pages: function () {
+  pages: function() {
     var currentPage = this.get('currentPage');
     var pages = [];
     var totalPages = this.get('totalPages');

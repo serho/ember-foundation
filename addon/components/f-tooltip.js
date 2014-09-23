@@ -16,7 +16,7 @@ export default FComponent.extend({
 
   position: 'bottom',
 
-  positionClass: function () {
+  positionClass: function() {
     return 'tip-' + this.get('position');
   }.property('position'),
 

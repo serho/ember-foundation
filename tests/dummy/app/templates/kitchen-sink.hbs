@@ -414,26 +414,23 @@
 <h4 id="accordion">Accordion</h4>
 {{#f-accordion}}
   {{#f-accordion-panel id="panel1" title="Accordion 1"}}
-    <dl class="tabs" data-tab>
-      <dd class="active"><a href="#panel1-1">Tab 1</a></dd>
-      <dd><a href="#panel1-2">Tab 2</a></dd>
-      <dd><a href="#panel1-3">Tab 3</a></dd>
-      <dd><a href="#panel1-4">Tab 4</a></dd>
-    </dl>
-    <div class="tabs-content">
-      <div class="content active" id="panel1-1">
+    {{#f-tab-panel}}
+      {{#f-tab-pane id="panel1-1" title="Tab 1"}}
         <p>First panel content goes here...</p>
-      </div>
-      <div class="content" id="panel1-2">
+      {{/f-tab-pane}}
+
+      {{#f-tab-pane id="panel1-2" title="Tab 2"}}
         <p>Second panel content goes here...</p>
-      </div>
-      <div class="content" id="panel1-3">
+      {{/f-tab-pane}}
+
+      {{#f-tab-pane id="panel1-3" title="Tab 3"}}
         <p>Third panel content goes here...</p>
-      </div>
-      <div class="content" id="panel1-4">
+      {{/f-tab-pane}}
+
+      {{#f-tab-pane id="panel1-4" title="Tab 4"}}
         <p>Fourth panel content goes here...</p>
-      </div>
-    </div>
+      {{/f-tab-pane}}
+    {{/f-tab-panel}}
   {{/f-accordion-panel}}
 
   {{#f-accordion-panel id="panel2" title="Accordion 2"}}
@@ -454,6 +451,23 @@
 <hr>
 
 <h4 id="tabs">Tabs</h4>
+{{#f-tab-panel}}
+  {{#f-tab-pane id="panel2-1" title="Tab 1"}}
+    <p>First panel content goes here&hellip;</p>
+  {{/f-tab-pane}}
+
+  {{#f-tab-pane id="panel2-2" title="Tab 2"}}
+    <p>Second panel content goes here&hellip;</p>
+  {{/f-tab-pane}}
+
+  {{#f-tab-pane id="panel2-3" title="Tab 3"}}
+    <p>Third panel content goes here&hellip;</p>
+  {{/f-tab-pane}}
+
+  {{#f-tab-pane id="panel2-4" title="Tab 4"}}
+    <p>Fourth panel content goes here&hellip;</p>
+  {{/f-tab-pane}}
+{{/f-tab-panel}}
 
 <hr>
 

@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
-  setupFoundation: function () {
+  setupFoundation: function() {
     this.$().foundation('topbar');
     this.$().foundation('clearing');
     this.$().foundation('reveal');
@@ -9,7 +9,7 @@ export default Ember.Mixin.create({
     this.$().foundation('reveal-id');
   }.on('didInsertElement'),
 
-  teardownFoundation: function () {
+  teardownFoundation: function() {
     this.$().foundation('topbar', 'off');
     this.$().foundation('clearing', 'off');
     this.$().foundation('reveal', 'off');
