@@ -3,9 +3,9 @@ import Ember from 'ember';
 import FComponent from './f-component';
 
 export default FComponent.extend(DropdownEnabled, {
-  attributeBindings: [ 'aria-label', 'data-reveal-id', 'role' ],
+  attributeBindings: ['aria-label', 'data-reveal-id', 'role'],
 
-  classNames: [ 'button' ],
+  classNames: ['button'],
 
   click: function() {
     this.sendAction();

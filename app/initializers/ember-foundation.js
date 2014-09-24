@@ -1,4 +1,4 @@
-/* globals $ */
+import Ember from 'ember';
 
 export default {
   name: 'ember-foundation',
@@ -6,8 +6,10 @@ export default {
   initialize: function(container, app) {
     app.inject('component:f-breadcrumbs', 'router', 'router:main');
 
-    window.addEventListener('load', function() {
-      $(document).foundation();
+    Ember.View.reopen({
+      initFoundation: function() {
+        Ember.$(document).foundation();
+      }.on('didInsertElement')
     });
   }
 };

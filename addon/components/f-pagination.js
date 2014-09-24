@@ -32,9 +32,9 @@ export default FComponent.extend({
 
   'aria-label': 'Pagination',
 
-  attributeBindings: [ 'aria-label', 'role' ],
+  attributeBindings: ['aria-label', 'role'],
 
-  classNames: [ 'pagination' ],
+  classNames: ['pagination'],
 
   onFirstPage: function() {
     return this.get('currentPage') === 1;

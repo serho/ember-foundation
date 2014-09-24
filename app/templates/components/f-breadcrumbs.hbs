@@ -1,11 +1,7 @@
 {{#each crumb in breadCrumbs}}
   <li {{bind-attr class="crumb.isCurrent:current:"}}>
-    {{#if crumb.linkable}}
-      {{#link-to crumb.path}}
-        {{crumb.name}}
-      {{/link-to}}
-    {{else}}
+    {{#link-to crumb.path}}
       {{crumb.name}}
-    {{/if}}
+    {{/link-to}}
   </li>
 {{/each}}

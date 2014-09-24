@@ -7,35 +7,27 @@
 
 <h4 id="joyride">Joyride</h4>
 <div>
-  {{#f-button action="greet" class="secondary" id="start-jr"}}Start Joyride{{/f-button}}
+  {{#f-button class="secondary"}}Start Joyride{{/f-button}}
 
   <h5 class="so-awesome" id="numero1">Build Joyride with HTML</h5>
   <p class="so-awesome" id="numero2">Stop Number 2 for You!</p>
 
-  <ol class="joyride-list" data-joyride="">
-    <li data-class="custom so-awesome" data-id="numero1" data-text="Next">
+  {{#f-joyride}}
+    {{#f-stop at="numero1" nextText="Next"}}
       <h4>Stop #1</h4>
+      <p>You can control all the details for your tour stop. Any valid HTML will work inside of Joyride.</p>
+    {{/f-stop}}
 
-      <p>
-        You can control all the details for your tour stop. Any valid HTML
-        will work inside of Joyride.
-      </p>
-    </li>
-
-    <li data-button="Next" data-id="numero2">
+    {{#f-stop at="numero2" button="Next" nextText="Next"}}
       <h4>Stop #2</h4>
+      <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+    {{/f-stop}}
 
-      <p>
-        Get the details right by styling Joyride with a custom stylesheet!
-      </p>
-    </li>
-
-    <li data-button="Next">
+    {{#f-stop button="End"}}
       <h4>Stop #3</h4>
-
       <p>It works as a modal too!</p>
-    </li>
-  </ol>
+    {{/f-stop}}
+  {{/f-joyride}}
 </div>
 
 <hr>
@@ -126,28 +118,28 @@
   <li><a href="#">Yet another link</a></li>
 {{/f-dropdown}}
 <p>
-  {{#f-button class="tiny dropdown" dropdown="drop"}}Tiny Dropdown Button{{/f-button}}
+  {{#f-button class="tiny dropdown" dropdownId="drop"}}Tiny Dropdown Button{{/f-button}}
   <br>
-  {{#f-button class="small secondary radius dropdown" dropdown="drop"}}Small Secondary Radius Dropdown Button{{/f-button}}
+  {{#f-button class="small secondary radius dropdown" dropdownId="drop"}}Small Secondary Radius Dropdown Button{{/f-button}}
   <br>
-  {{#f-button class="alert round dropdown" dropdown="drop"}}Alert Round Dropdown Button{{/f-button}}
+  {{#f-button class="alert round dropdown" dropdownId="drop"}}Alert Round Dropdown Button{{/f-button}}
   <br>
-  {{#f-button class="large success dropdown" dropdown="drop"}}Large Success Dropdown Button{{/f-button}}
+  {{#f-button class="large success dropdown" dropdownId="drop"}}Large Success Dropdown Button{{/f-button}}
   <br>
-  {{#f-button class="large dropdown expand" dropdown="drop"}}Large Dropdown Expand Button{{/f-button}}
+  {{#f-button class="large dropdown expand" dropdownId="drop"}}Large Dropdown Expand Button{{/f-button}}
 </p>
 
 <hr>
 
 <h4 id="split-buttons">Split Buttons</h4>
 <p>
-  {{#f-button class="tiny split" dropdown="drop"}}Tiny Split Button{{/f-button}}
+  {{#f-button class="tiny split" dropdownId="drop"}}Tiny Split Button{{/f-button}}
   <br>
-  {{#f-button class="small secondary radius split" dropdown="drop"}}Small Secondary Radius Split Button{{/f-button}}
+  {{#f-button class="small secondary radius split" dropdownId="drop"}}Small Secondary Radius Split Button{{/f-button}}
   <br>
-  {{#f-button class="alert round split" dropdown="drop"}}Round Alert Split Button{{/f-button}}
+  {{#f-button class="alert round split" dropdownId="drop"}}Round Alert Split Button{{/f-button}}
   <br>
-  {{#f-button class="large success split" dropdown="drop"}}Large Success Split Button{{/f-button}}
+  {{#f-button class="large success split" dropdownId="drop"}}Large Success Split Button{{/f-button}}
 </p>
 
 <hr>
@@ -161,7 +153,35 @@
 <hr>
 
 <h4 id="clearing">Clearing</h4>
-{{f-clearing images=clearingImages}}
+{{#f-clearing}}
+    {{f-clearing-image alt="Comet image"
+      caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum."
+      thumbnail="http://foundation.zurb.com/docs/assets/img/examples/comet-th-sm.jpg"
+      url="http://foundation.zurb.com/docs/assets/img/examples/comet.jpg"
+    }}
+
+    {{f-clearing-image alt="Earth image"
+      thumbnail="http://foundation.zurb.com/docs/assets/img/examples/earth-th-sm.jpg"
+      url="http://foundation.zurb.com/docs/assets/img/examples/earth.jpg"
+    }}
+
+    {{f-clearing-image alt="Launch image"
+      caption="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+      thumbnail="http://foundation.zurb.com/docs/assets/img/examples/launch-th-sm.jpg"
+      url="http://foundation.zurb.com/docs/assets/img/examples/launch.jpg"
+    }}
+
+    {{f-clearing-image alt="Satellite image"
+      thumbnail="http://foundation.zurb.com/docs/assets/img/examples/satelite-th-sm.jpg"
+      url="http://foundation.zurb.com/docs/assets/img/examples/satelite.jpg"
+    }}
+
+    {{f-clearing-image alt="Space image"
+      caption="Integer posuere erat a ante venenatis dapibus posuere velit aliquet."
+      thumbnail="http://foundation.zurb.com/docs/assets/img/examples/space-th-sm.jpg"
+      url="http://foundation.zurb.com/docs/assets/img/examples/space.jpg"
+    }}
+{{/f-clearing}}
 
 <hr>
 
@@ -216,8 +236,8 @@
 
 <h4 id="dropdowns">Dropdowns</h4>
 <p>
-  {{#f-button dropdown="tinyDrop"}}Link Dropdown &raquo;{{/f-button}}
-  {{#f-button dropdown="contentDrop"}}Content Dropdown &raquo;{{/f-button}}
+  {{#f-button dropdownId="tinyDrop"}}Link Dropdown &raquo;{{/f-button}}
+  {{#f-button dropdownId="contentDrop"}}Content Dropdown &raquo;{{/f-button}}
 </p>
 <!-- Dropdowns -->
 {{#f-dropdown id="tinyDrop"}}

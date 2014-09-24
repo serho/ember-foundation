@@ -1,9 +1,9 @@
 import FComponent from './f-component';
 
 export default FComponent.extend({
-  attributeBindings: [ 'data-accordion' ],
+  attributeBindings: ['data-accordion'],
 
-  classNames: [ 'accordion' ],
+  classNames: ['accordion'],
 
   'data-accordion': '',
 

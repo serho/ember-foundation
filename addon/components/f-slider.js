@@ -1,9 +1,9 @@
 import FComponent from './f-component';
 
 export default FComponent.extend({
-  attributeBindings: [ 'data-slider' ],
+  attributeBindings: ['data-slider'],
 
-  classNames: [ 'range-slider' ],
+  classNames: ['range-slider'],
 
   'data-slider': '',
 

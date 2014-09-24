@@ -1,7 +1,7 @@
 import FComponent from './f-component';
 
 export default FComponent.extend({
-  classNames: [ 'progress' ],
+  classNames: ['progress'],
 
   meterStyle: function() {
     return 'width: ' + this.get('value') + '%;';

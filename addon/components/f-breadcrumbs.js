@@ -1,4 +1,3 @@
-import Ember from 'ember';
 import FComponent from './f-component';
 
 export default FComponent.extend({
@@ -10,17 +9,13 @@ export default FComponent.extend({
     var defaultPaths = this.get('pathNames');
 
     controllers.forEach(function(controller, index) {
-      var crumbName = controller.get('breadCrumb');
+      var crumbName = controller.get('breadCrumbName');
 
-      if (!Ember.isEmpty(crumbName)) {
-        var defaultPath = defaultPaths[index];
-        var specifiedPath = controller.get('breadCrumbPath');
-
+      if (crumbName) {
         return breadCrumbs.addObject({
+          isCurrent: false,
           name: crumbName,
-          path: specifiedPath || defaultPath,
-          linkable: specifiedPath !== false,
-          isCurrent: false
+          path: defaultPaths[index]
         });
       }
     });
@@ -31,12 +26,11 @@ export default FComponent.extend({
 
     return breadCrumbs;
   }.property(
-    'controllers.@each.breadCrumb',
-    'controllers.@each.breadCrumbPath',
+    'controllers.@each.breadCrumbName',
     'pathNames.[]'
   ),
 
-  classNames: [ 'breadcrumbs' ],
+  classNames: ['breadcrumbs'],
 
   controllers: function() {
     return this.get('handlerInfos').map(function(handlerInfo) {

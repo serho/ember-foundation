@@ -1,11 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
-  attributeBindings: [ 'aria-controls', 'data-dropdown', 'data-options' ],
+  attributeBindings: ['aria-controls', 'data-dropdown', 'data-options'],
 
   setupDropdown: function() {
     var alignment = this.get('align-dropdown');
-    var dropdownId = this.get('dropdown');
+    var dropdownId = this.get('dropdownId');
     var hover = this.get('hover');
     var options = [];
 

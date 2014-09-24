@@ -1,9 +1,7 @@
 import FComponent from './f-component';
 
 export default FComponent.extend({
-  attributeBindings: ['data-orbit'],
+  classNameBindings: ['featured:clearing-featured-img'],
 
-  'data-orbit': '',
-
-  tagName: 'ul'
+  tagName: 'li'
 });

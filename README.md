@@ -19,17 +19,6 @@ Next, run the blueprint for ember-foundation:
 ember generate ember-foundation
 ```
 
-Then you need to mixin FoundationEnabled with your ApplicationView:
-
-```js
-// app/views/application.js
-
-import Ember from 'ember';
-import FoundationEnabled from 'ember-foundation/mixins/foundation-enabled';
-
-export default Ember.View.extend(FoundationEnabled);
-```
-
 ## Stylesheets
 
 ### Using SASS
