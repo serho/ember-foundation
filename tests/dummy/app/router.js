@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('joyride');
     this.route('magellan');
     this.route('pagination');
+    this.route('progress-bars');
   });
 
   this.route('kitchen-sink');
