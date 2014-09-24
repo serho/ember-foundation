@@ -20,6 +20,7 @@ Router.map(function() {
     this.route('reveal-modal');
     this.route('sliders');
     this.route('switches');
+    this.route('tabs');
   });
 
   this.route('kitchen-sink');
