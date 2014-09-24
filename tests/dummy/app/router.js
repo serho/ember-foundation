@@ -19,6 +19,7 @@ Router.map(function() {
     this.route('progress-bars');
     this.route('reveal-modal');
     this.route('sliders');
+    this.route('switches');
   });
 
   this.route('kitchen-sink');
