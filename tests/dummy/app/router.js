@@ -17,6 +17,7 @@ Router.map(function() {
     this.route('magellan');
     this.route('pagination');
     this.route('progress-bars');
+    this.route('reveal-modal');
   });
 
   this.route('kitchen-sink');
