@@ -21,6 +21,7 @@ Router.map(function() {
     this.route('sliders');
     this.route('switches');
     this.route('tabs');
+    this.route('tooltips');
   });
 
   this.route('kitchen-sink');
