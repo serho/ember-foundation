@@ -18,6 +18,7 @@ Router.map(function() {
     this.route('pagination');
     this.route('progress-bars');
     this.route('reveal-modal');
+    this.route('sliders');
   });
 
   this.route('kitchen-sink');
