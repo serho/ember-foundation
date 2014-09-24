@@ -31,7 +31,7 @@ In your app.scss, simply import "ember-foundation":
 @import "ember-foundation";
 ```
 
-This will include
+This will include normalize.css and all Foundation styles.
 
 ### Using CSS
 
